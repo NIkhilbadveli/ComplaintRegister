@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crazy.insane.trial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SignInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity"
+            android:label="Sign Up"></activity>
+        <activity android:name=".ResetPasswordActivity"
+            android:label="Reset Password"/>
+        <activity
+            android:name=".AcademicsActivity"
+            android:label="@string/academic_complaints"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AcademicsEditingActivity"
+            android:label="@string/new_complaint"
+            android:parentActivityName=".AcademicsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.AcademicsActivity" />
+        </activity>
+        <activity
+            android:name=".SportsActivity"
+            android:label="@string/sports_complaints"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HostelActivity"
+            android:label="@string/hostel_complaints"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SportsEditingActivity"
+            android:label="@string/new_complaint"
+            android:parentActivityName=".SportsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.SportsActivity" />
+        </activity>
+        <activity
+            android:name=".CulturalActivity"
+            android:label="@string/cultural_complaints"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".CulturalEditingActivity"
+            android:label="@string/new_complaint"
+            android:parentActivityName=".CulturalActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.CulturalActivity" />
+        </activity>
+        <activity
+            android:name=".HostelEditingActivity"
+            android:label="@string/new_password"
+            android:parentActivityName=".HostelActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.HostelActivity" />
+        </activity>
+        <activity
+            android:name=".MessActivity"
+            android:label="@string/mess_complaints"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.MainActivity" />
+        </activity>
+        <activity
+            android:name=".MessEditingActivity"
+            android:label="@string/new_complaint"
+            android:parentActivityName=".MessActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.crazy.insane.trial.MessActivity" />
+        </activity>
+        <activity
+            android:name=".UserProfileActivity"
+            android:label="@string/user_profile" />
+        <activity
+            android:name=".ComplaintEditing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComplaintDescription"
+            android:label="@string/title_activity_complaint_description"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

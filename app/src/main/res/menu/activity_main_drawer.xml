@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/complaints">
+            <menu>
+                <item
+                    android:id="@+id/nav_sports"
+                    android:icon="@drawable/ic_menu_sports"
+                    android:title="Sports" />
+                <item
+                    android:id="@+id/nav_mess"
+                    android:icon="@drawable/ic_menu_mess"
+                    android:title="Mess" />
+                <item
+                    android:id="@+id/nav_academics"
+                    android:icon="@drawable/ic_menu_academics"
+                    android:title="Academics" />
+                <item
+                    android:id="@+id/nav_cultural"
+                    android:icon="@drawable/ic_menu_cultural"
+                    android:title="Cultural" />
+                <item
+                    android:id="@+id/nav_hostel"
+                    android:icon="@drawable/ic_menu_hostel"
+                    android:title="Hostel" />
+            </menu>
+        </item>
+    </group>
+    <item
+        android:id="@+id/my_account"
+        android:title="My Account"/>
+
+</menu>
